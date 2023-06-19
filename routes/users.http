@@ -1,0 +1,27 @@
+GET http://localhost:5050/users 
+
+############
+
+POST http://localhost:5050/users HTTP/1.1
+content-type: application/json
+
+{
+     "firstname": "andrea",
+     "lastname": "messana",
+     "username":"Messanone",
+      "email": "andre90messana@gmail.com",
+      "password": "briciolaMessana",
+      "age": 33,
+      "role":"admin"
+     }
+
+############
+
+PATCH http://localhost:5050/users/648f8dbe0e2635f0bc12ad34 HTTP/1.1
+content-type: application/json
+
+{
+   
+    "email": "ciao@ciao.com",
+    "password": "12345678"
+}
